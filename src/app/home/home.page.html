@@ -1,0 +1,198 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="menu">
+      <ion-button (click)="toogleMenu()">
+        <ion-icon slot="start" name="menu"></ion-icon>
+        MENU
+      </ion-button>
+    </ion-buttons>
+
+    <ion-grid fixed> 
+      <ion-row>
+        <ion-col size="4">
+          <img src="../../assets/icon/logo1-02.png" alt="">
+        </ion-col>
+        <ion-col size="8">
+          <div class="butonList">
+            <ion-item >
+              <ion-button (click)="goNosotros()"  fill="clear" class="inicio">
+                    INICIO
+              </ion-button>
+              <ion-button  fill="clear" class="inicio">
+                NOSOTROS
+              </ion-button>
+              <ion-button href="" fill="clear" class="inicio">
+                EVALUACIONES
+              </ion-button>
+              <ion-button href="" fill="clear" class="inicio">
+                CAPACITACIONES
+              </ion-button>
+              <ion-button href="" fill="clear" class="inicio">
+                CONTACTO
+              </ion-button>
+            </ion-item>
+            <hr class="linea">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="no-scroll">
+  <ion-slides mode="ios" pager="ios" scrollbar="ios">
+    <ion-slide *ngFor="let slide of slides">
+      <div>
+        <img [src]="slide.img">
+      </div>
+      <div>
+        <h3 [innerHTML]="slide.titulo"></h3>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" sizeMd="6" sizeLg="6">
+        <div >
+          <h2>Acerca de nosotros</h2>
+          <hr class="linea2"><br><br>
+          <p class="justificado" id="nosotros">Empresa conformada el 22 de Junio de 2017 por empresarios mexicanos que
+            cuentan con amplia experiencia en materia financiera, comercialización de
+            petrolíferos y de coordinación operativa logística, que en conjunto se integra
+            una fuerte estructura para garantizar proyectos de gran magnitud. <br><br>
+            Hidromex Aviation se fundó con el objetivo de aprovechar las oportunidades
+            que surgen de la transición del mercado de combustible de aviación con
+            enfoque en el suministro de combustibles al ala del avión, comercialización de
+            combustibles y proveer servicios auxiliares para respaldar actividades
+            comerciales. <br><br>
+            Los fundadores de Hidromex Turbosina anticiparon que la apertura del mercado
+            de energía en México eventualmente conduciría a una transformación de las
+            estructuras de comercialización y distribución de combustibles de aviación en
+            México.</p>
+        </div>
+      </ion-col>
+      <ion-col size="12" sizeMd="6" sizelg="6">
+        <img src="../../assets/imagenes/imagen2-02.png" alt="" class="cargado">
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+    <ion-grid fixed >
+      <div class="gris">
+        <ion-row >
+          <ion-col size="12" sizeMd="6" sizelg="6">
+            <img src="../../assets/icon/iconomision-03.png" alt="" class="iconos"><br>
+            <h2 class="ion-text-center">MISIÓN</h2><br>
+            <p class="ion-text-justify justificado" id="mision">Suministrar combustibles de aviación en toda la
+              república mexicana, proveer servicios de into-plane y
+              servicios de coordinación operativa logística.</p>
+          </ion-col>
+          <ion-col size="12" sizeMd="6" sizelg="6"><br><br><br>
+            <img src="../../assets/icon/iconovision-05.png" alt="" class="iconos"><br><br>
+            <h2 class="ion-text-center ">VISIÓN</h2><br>
+            <p class="ion-text-justify justificado grisF">Ser una empresa líder en los negocios de la industria
+              del petróleo, desarrollando infraestructura logística
+              para maximizar nuestras operaciones</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid> 
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size = "12" sizeLg = "4"  >
+        <h2 id="servicios" >Servicios</h2><hr class="linea2"><br>
+        <img src="../../assets/icon/iconoimportacion-03.png" alt="" class="iconos">
+        <p class="ion-text-center grisF">Importación y Comercialización de: Gasolina 87 Octanos, Gasolina 91 Octanos y Diesel UBA</p>
+        </ion-col>
+        <ion-col  size = "12" sizeLg = "4" ><br><br><br><br>
+          <img src="../../assets/icon/iconofinanciero-04.png" alt="" class="iconos">
+          <p class="ion-text-center grisF">Servicios Financieros para la compra-venta de combustibles</p>
+        </ion-col>
+        <ion-col  size = "12" sizeLg = "4" ><br><br><br><br>
+          <img src="../../assets/icon/iconocoordinacion-05.png" alt="" class="iconos"><br><br><br><br>
+          <p class="ion-text-center grisF">Servicios de Coordinación Operativa Logística</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid><br><br> 
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size = "12" sizeLg = "6"  >
+        <img src="../../assets/icon/iconodistribucion-05.png" alt="" class="iconos">
+        <p class="ion-text-center grisF">Servicios de Distribución de Combustibles</p>
+        </ion-col>
+        <ion-col  size = "12" sizeLg = "6" >
+          <img src="../../assets/icon/iconocapa-02.png" alt="" class="iconos">
+          <p class="ion-text-center grisF" id="capacitaciones">Capacitación</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size = "12" sizeLg = "6"  >
+          <h2>Permisos de Comercialización</h2><hr class="linea2"><br>
+          <a href="../../assets/Docs/35429941-9980-408f-b583-14272104036b.pdf" download="Permiso de comercialización"><ion-label  class="grisF">CRE H/20837/COM/2018</ion-label></a>
+        <img src="../../assets/imagenes/Cre.png" alt="" class="iconos">
+        </ion-col>
+        <ion-col  size = "12" sizeLg = "6" >
+          <h2>Permisos de importación</h2><hr class="linea2"><br>
+          <ion-item >
+            <a href="https://ionicframework.com/blog/category/engineering/"><ion-label class="grisF">SENER 1701C117009404</ion-label></a>
+          </ion-item>
+          <img src="../../assets/imagenes/logo-sener.jpg" alt="" class="iconos">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size = "12" sizeLg = "6"  >
+          <h2>UBICACIÓN</h2><hr class="linea2">
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15052.520026665623!2d-99.162317!3d19.406788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff15dfbdcb8d%3A0xf5d61134b9df763f!2sPiso%202%2C%20Amealco%208%2C%20Roma%20Sur%2C%2006760%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1576629098550!5m2!1ses!2smx" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </ion-col>
+        <ion-col  size = "12" sizeLg = "6" >
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title color="secondary" id="contacto">Buzón de informacion, quejas y sugerencias.</ion-card-title>
+              <ion-card-subtitle >Cualquier duda sugerencia u opinión que tengas, no duses en escribirnos</ion-card-subtitle>
+              <ion-card-content>
+                <ion-grid fixed>
+                  <ion-row>
+                    <ion-col size = "12" sizeLg = "6">
+                      <ion-input type="text" placeholder="Nombre*" class="borde"></ion-input><br>
+                      <ion-input type="number" placeholder="Telefono" class="borde"></ion-input>
+                    </ion-col>
+                    <ion-col size = "12" sizeLg = "6">
+                      <ion-input type="text" placeholder="Email*" class="borde"></ion-input><br>
+                      <ion-input type="text" placeholder="Queja/Sugerencia" class="borde"></ion-input>
+                      <ion-textarea placeholder="Mensaje" class="borde"></ion-textarea>
+                      <ion-button (click)="Enviar()">
+                        Enviar
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-footer>
+      <div class="pie"> 
+        <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12"  sizeLg = "4" >
+            <img src="../../assets/icon/hidromex blanco-01.png" alt="" style=" width: 80%; height: auto;"><br>
+            <p style="font-size: 10px; color: white;">&copy;Hidromex Energy 2019 Todos los derechos reservados<p></p>
+          </ion-col>
+          <ion-col size="12" sizeLg = "4" >
+          </ion-col>
+          <ion-col size="12"  sizeLg = "4" ><br><br><br><br><br><br><br>
+            <h3>Politica de privacidad|
+              <img src="../../assets/icon/iconoFB-04.png" alt="" class="redes pie">
+              <img src="../../assets/icon/iconoIN-04.png" alt="" class="redes pie">
+              <img src="../../assets/icon/iconoINS-04.png" alt="" class="redes pie"></h3>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+    </ion-footer>
+</ion-content>

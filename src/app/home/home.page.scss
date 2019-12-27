@@ -1,0 +1,84 @@
+.logo {
+  height: auto;
+  width: 8%;
+  margin: auto;
+}
+.inicio:hover {
+  background-color: rgb(161, 26, 26);
+  color: white;
+  border-radius: 10px;
+}
+.inicio {
+  color: #c31629;
+  font-family: "Audiowide", cursive;
+}
+h2 {
+  color: #c31629;
+  font-family: "Audiowide", cursive;
+}
+.redes {
+  width: 10%;
+  height: auto;
+}
+.cargado {
+  margin: 8%;
+}
+.iconos {
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.gris {
+  background-color: #f9f9f8;
+}
+.grisF {
+  color: #747474cc;
+}
+.linea {
+  background-color: #1b7aa5;
+  height: 5px;
+}
+.linea2 {
+  background-color: #1b7aa5;
+  height: 5px;
+}
+.justificado {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  color: rgb(170, 165, 165);
+}
+.butonList {
+  margin-left: 100px;
+}
+ion-slide {
+  display: block;
+}
+.borde {
+  border: solid 2px #71a2b9;
+  border-radius: 5px;
+}
+.pie {
+  background-color: #1b7aa5;
+}
+
+@media (max-width: 900px) {
+  .butonList {
+    display: none;
+  }
+  .cargado {
+    width:80%;
+    height: auto;
+  }
+  .mapa{
+    width:99%;
+     height:auto;
+  }
+}
+@media (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+  
+}
